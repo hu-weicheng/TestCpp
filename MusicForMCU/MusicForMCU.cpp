@@ -1,6 +1,9 @@
 ﻿//https://blog.51cto.com/u_14987/7882605
 #include <iostream> 
-#include<stdlib.h>
+#include <stdlib.h>
+#include <stdio.h>
+#include <conio.h>
+
 int zifuchange(char x);
 char word[11] = { 0 };//音符、节拍数组
 int yinfushu = 0;//音符个数统计
