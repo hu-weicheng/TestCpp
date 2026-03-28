@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 18
-VisualStudioVersion = 18.4.11605.240 stable
+VisualStudioVersion = 18.4.11605.240
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "TestCpp", "TestCpp\TestCpp.vcxproj", "{95D0E2FF-227C-4988-8E09-EBF5229AD481}"
 EndProject
@@ -29,11 +29,11 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "client_0.4", "client_0.4\cl
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "TestStructOverLoadFun", "TestStructOverLoadFun\TestStructOverLoadFun.vcxproj", "{9E3A530B-04CF-4EFD-9262-888E8C666CCE}"
 EndProject
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Study", "Study\Study.vcxproj", "{17671A99-298F-4384-961C-59CC3B9955CA}"
-EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "MusicForMCU", "MusicForMCU\MusicForMCU.vcxproj", "{8000BB8D-C281-4DDA-B7FA-034ABBAECC51}"
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "MusicCodeForMCU", "MusicCodeForMCU\MusicCodeForMCU.vcxproj", "{E3C34A05-73C7-47E4-B33B-F3C258D51B53}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "STUNsvc", "STUNsvc\STUNsvc.vcxproj", "{B14DFE85-0325-4212-8870-DDE2009D6705}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -147,14 +147,6 @@ Global
 		{9E3A530B-04CF-4EFD-9262-888E8C666CCE}.Release|x64.Build.0 = Release|x64
 		{9E3A530B-04CF-4EFD-9262-888E8C666CCE}.Release|x86.ActiveCfg = Release|Win32
 		{9E3A530B-04CF-4EFD-9262-888E8C666CCE}.Release|x86.Build.0 = Release|Win32
-		{17671A99-298F-4384-961C-59CC3B9955CA}.Debug|x64.ActiveCfg = Debug|x64
-		{17671A99-298F-4384-961C-59CC3B9955CA}.Debug|x64.Build.0 = Debug|x64
-		{17671A99-298F-4384-961C-59CC3B9955CA}.Debug|x86.ActiveCfg = Debug|Win32
-		{17671A99-298F-4384-961C-59CC3B9955CA}.Debug|x86.Build.0 = Debug|Win32
-		{17671A99-298F-4384-961C-59CC3B9955CA}.Release|x64.ActiveCfg = Release|x64
-		{17671A99-298F-4384-961C-59CC3B9955CA}.Release|x64.Build.0 = Release|x64
-		{17671A99-298F-4384-961C-59CC3B9955CA}.Release|x86.ActiveCfg = Release|Win32
-		{17671A99-298F-4384-961C-59CC3B9955CA}.Release|x86.Build.0 = Release|Win32
 		{8000BB8D-C281-4DDA-B7FA-034ABBAECC51}.Debug|x64.ActiveCfg = Debug|x64
 		{8000BB8D-C281-4DDA-B7FA-034ABBAECC51}.Debug|x64.Build.0 = Debug|x64
 		{8000BB8D-C281-4DDA-B7FA-034ABBAECC51}.Debug|x86.ActiveCfg = Debug|Win32
@@ -171,6 +163,14 @@ Global
 		{E3C34A05-73C7-47E4-B33B-F3C258D51B53}.Release|x64.Build.0 = Release|x64
 		{E3C34A05-73C7-47E4-B33B-F3C258D51B53}.Release|x86.ActiveCfg = Release|Win32
 		{E3C34A05-73C7-47E4-B33B-F3C258D51B53}.Release|x86.Build.0 = Release|Win32
+		{B14DFE85-0325-4212-8870-DDE2009D6705}.Debug|x64.ActiveCfg = Debug|x64
+		{B14DFE85-0325-4212-8870-DDE2009D6705}.Debug|x64.Build.0 = Debug|x64
+		{B14DFE85-0325-4212-8870-DDE2009D6705}.Debug|x86.ActiveCfg = Debug|Win32
+		{B14DFE85-0325-4212-8870-DDE2009D6705}.Debug|x86.Build.0 = Debug|Win32
+		{B14DFE85-0325-4212-8870-DDE2009D6705}.Release|x64.ActiveCfg = Release|x64
+		{B14DFE85-0325-4212-8870-DDE2009D6705}.Release|x64.Build.0 = Release|x64
+		{B14DFE85-0325-4212-8870-DDE2009D6705}.Release|x86.ActiveCfg = Release|Win32
+		{B14DFE85-0325-4212-8870-DDE2009D6705}.Release|x86.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
