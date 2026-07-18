@@ -1,7 +1,8 @@
 ﻿// TestCpp.cpp : 此文件包含 "main" 函数。程序执行将在此处开始并结束。
 //
-
+#include <type_traits>  //C++ 11
 #include <iostream>
+
 using namespace std;
 
 template<typename Tp>
@@ -15,11 +16,14 @@ T min(T a, T b)
     return a < b ? a : b;
 }
 
-//template<size_t Tt>
-//Tt max(Tt a,int Tt)
-//{
-//    return a>b?a:b;
-//}
+
+
+template<typename T>
+constexpr T maxV2(T a, T b)
+{
+    static_assert(std::is_integral<T>::value, "Integral type required");//限制为整数类型
+    return a > b ? a : b;
+}
 
 int main()
 {
