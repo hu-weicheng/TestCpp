@@ -1,9 +1,11 @@
-﻿#include <iostream>
+﻿
+#define _CRT_SECURE_NO_WARNINGS
+#include <iostream>
 #include <vector>
 #include <cstring>
 #include <cstdio>
-//'sprintf': This function or variable may be unsafe.Consider using sprintf_s instead.To disable deprecation, use _CRT_SECURE_NO_WARNINGS.See online help for details.
-#define _CRT_SECURE_NO_WARNINGS
+//'sprintf': This function or variable may be unsafe.Consider using sprintf_s instead.To disable deprecation, use _CRT_SECURE_NO_WARNINGS.See online help for details.TestMD5	C : \Users\Raise\source\repos\QQMailAttach\TestMD5\TestMD5.cpp	133
+
 using namespace std;
 
 inline uint32_t rotate_left(uint32_t x, int n) {
@@ -101,17 +103,19 @@ void process_block(const uint8_t* block, uint32_t& a, uint32_t& b, uint32_t& c, 
             int s = param_indices[round][step];
             int m_index = m_indices[round][step];
             uint32_t x = M[m_index];
-            switch (round) {
-            case 0: FF(a, b, c, d, x, s, T[step]); break;
-            case 1: GG(d, a, b, c, x, s, T[16 + step]); break;
-            case 2: HH(c, d, a, b, x, s, T[32 + step]); break;
-            case 3: II(b, c, d, a, x, s, T[48 + step]); break;
+            switch (round) 
+            {
+                case 0: FF(a, b, c, d, x, s, T[step]); break;
+                case 1: GG(d, a, b, c, x, s, T[16 + step]); break;
+                case 2: HH(c, d, a, b, x, s, T[32 + step]); break;
+                case 3: II(b, c, d, a, x, s, T[48 + step]); break;
             }
         }
     }
 }
 
-string md5(const void* input, size_t nBytes) {
+string md5(const void* input, size_t nBytes) 
+{
     uint32_t a = 0x67452301;
     uint32_t b = 0xEFCDAB89;
     uint32_t c = 0x98BADCFE;
@@ -130,15 +134,11 @@ string md5(const void* input, size_t nBytes) {
     memcpy(digest + 12, &d, 4);
 
     char hex[33];
-    for (int i = 0; i < 16; ++i) {
-        sprintf(hex + i * 2, "%02x", digest[i]);
+
+    for (int i = 0; i < 16; ++i) 
+    {
+        sprintf(hex + i * 2, "%02x", digest[i]);//'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
     }
     return string(hex);
 }
 
-int main() 
-{
-    const char* test_str = "hello world";
-    cout << "MD5(\""<<test_str<<"\") = " << md5(test_str, strlen(test_str)) << endl;
-    return 0;
-}
